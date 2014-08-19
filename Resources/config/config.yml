@@ -2,3 +2,11 @@ fos_user:
     db_driver: orm # other valid values are 'mongodb', 'couchdb' and 'propel'
     firewall_name: main
     user_class: AndyTruong\Bundle\CommonBundle\Entity\User
+
+fos_rest:
+    routing_loader:
+        default_format: json
+    body_converter:
+        enabled: true
+    view:
+        view_response_listener: force
